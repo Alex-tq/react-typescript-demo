@@ -13,6 +13,8 @@ import User from "./components/User";
 import Counter from "./components/Counter";
 import Box from "./context/Box";
 import { ThemeContextProvider } from "./context/ThemeContext";
+import { UserContextProvider } from "./context/UserContext";
+import User2 from "./context/User";
 
 function App() {
   const [text, setText] = useState("");
@@ -66,6 +68,10 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+
+      <UserContextProvider>
+        <User2 />
+      </UserContextProvider>
     </div>
   );
 }
