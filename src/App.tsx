@@ -11,6 +11,8 @@ import Input from "./components/Input";
 import Container from "./components/Container";
 import User from "./components/User";
 import Counter from "./components/Counter";
+import Box from "./context/Box";
+import { ThemeContextProvider } from "./context/ThemeContext";
 
 function App() {
   const [text, setText] = useState("");
@@ -61,6 +63,9 @@ function App() {
       <Container styles={{ border: "1px solid red", padding: "1rem" }} />
       <User />
       <Counter />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
