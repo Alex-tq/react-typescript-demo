@@ -16,6 +16,7 @@ import { ThemeContextProvider } from "./context/ThemeContext";
 import { UserContextProvider } from "./context/UserContext";
 import User2 from "./context/User";
 import MutableRef from "./ref/MutableRef";
+import CounterClass from "./components/class/Counter";
 
 function App() {
   const [text, setText] = useState("");
@@ -74,6 +75,8 @@ function App() {
         <User2 />
       </UserContextProvider>
       <MutableRef />
+
+      <CounterClass message={"Counter is"} />
     </div>
   );
 }
