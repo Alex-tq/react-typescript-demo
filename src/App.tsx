@@ -17,6 +17,8 @@ import { UserContextProvider } from "./context/UserContext";
 import User2 from "./context/User";
 import MutableRef from "./ref/MutableRef";
 import CounterClass from "./components/class/Counter";
+import Private from "./components/auth/Private";
+import Profile from "./components/auth/Profile";
 
 function App() {
   const [text, setText] = useState("");
@@ -77,6 +79,7 @@ function App() {
       <MutableRef />
 
       <CounterClass message={"Counter is"} />
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
