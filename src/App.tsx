@@ -15,6 +15,7 @@ import Box from "./context/Box";
 import { ThemeContextProvider } from "./context/ThemeContext";
 import { UserContextProvider } from "./context/UserContext";
 import User2 from "./context/User";
+import MutableRef from "./ref/MutableRef";
 
 function App() {
   const [text, setText] = useState("");
@@ -72,6 +73,7 @@ function App() {
       <UserContextProvider>
         <User2 />
       </UserContextProvider>
+      <MutableRef />
     </div>
   );
 }
