@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Greet from "./components/Greet";
 import Person from "./components/Person";
@@ -7,7 +8,7 @@ import Heading from "./components/Heading";
 import Oscar from "./components/Oscar";
 import Button from "./components/Button";
 import Input from "./components/Input";
-import { useState } from "react";
+import Container from "./components/Container";
 
 function App() {
   const [text, setText] = useState("");
@@ -55,6 +56,7 @@ function App() {
           setText("");
         }}
       />
+      <Container styles={{ border: "1px solid red", padding: "1rem" }} />
     </div>
   );
 }
