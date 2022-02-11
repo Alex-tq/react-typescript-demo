@@ -9,6 +9,7 @@ import Oscar from "./components/Oscar";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import Container from "./components/Container";
+import User from "./components/User";
 
 function App() {
   const [text, setText] = useState("");
@@ -57,6 +58,7 @@ function App() {
         }}
       />
       <Container styles={{ border: "1px solid red", padding: "1rem" }} />
+      <User />
     </div>
   );
 }
