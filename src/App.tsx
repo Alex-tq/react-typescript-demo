@@ -22,6 +22,8 @@ import Profile from "./components/auth/Profile";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restrictions/RandomNumber";
 import { Toast } from "./components/templateLiterals/Toast";
+import { CustomButton } from "./components/html/Button";
+import { CustomInput } from "./components/html/Input";
 
 function App() {
   const [text, setText] = useState("");
@@ -91,6 +93,8 @@ function App() {
       />
       <RandomNumber value={9} isPositive />
       <Toast position={"center"} />
+      <CustomButton variant="primary">Button Label</CustomButton>
+      <CustomInput value="test" />
     </div>
   );
 }
