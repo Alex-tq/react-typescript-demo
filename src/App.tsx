@@ -19,6 +19,7 @@ import MutableRef from "./ref/MutableRef";
 import CounterClass from "./components/class/Counter";
 import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
+import { List } from "./components/generics/List";
 
 function App() {
   const [text, setText] = useState("");
@@ -80,6 +81,12 @@ function App() {
 
       <CounterClass message={"Counter is"} />
       <Private isLoggedIn={true} component={Profile} />
+      <List
+        items={["spiderman", "batman", "deadpool"]}
+        onClick={(item) => {
+          console.log(item);
+        }}
+      />
     </div>
   );
 }
