@@ -25,6 +25,7 @@ import { Toast } from "./components/templateLiterals/Toast";
 import { CustomButton } from "./components/html/Button";
 import { CustomInput } from "./components/html/Input";
 import { CustomComponents } from "./components/html/CustomComponents";
+import { Text } from "./components/polymorphic/Text";
 
 function App() {
   const [text, setText] = useState("");
@@ -97,6 +98,16 @@ function App() {
       <CustomButton variant="primary">Button Label</CustomButton>
       <CustomInput value="test" />
       <CustomComponents name="Alex" isLoggedIn />
+
+      <Text as={"h1"} size="lg">
+        Heading
+      </Text>
+      <Text as="p" size="md">
+        Paragrapg
+      </Text>
+      <Text as="label" htmlFor="someId" size="sm" color="secondary">
+        Label
+      </Text>
     </div>
   );
 }
